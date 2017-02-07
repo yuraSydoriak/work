@@ -1,0 +1,69 @@
+
+/*****************************ELEMENTS**********************************/
+.wrapper{
+	background: url(../img/main_El.jpg) no-repeat;
+	background-size:cover;
+	width:100%;
+	height:950px;
+	margin:0 auto;
+}
+
+.my_info {
+  width: 350px;
+  height: 400px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius:7px;
+
+}
+.photo{
+	width: 200px;
+	height: 200px;
+	border-radius:50%;
+	background-color: #000;
+	margin: 30px auto;
+	overflow:hidden;
+}
+.my_info h1, p {
+	text-transform: uppercase; 
+	text-align: center;
+	margin: 0;
+}
+
+/*******************************MEDIA**********************************/
+/**Extra large**/
+@media (min-width: 12000px) {
+  .wrapper{
+  	height:900px;
+	}
+}
+/**For desktop**/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrapper{
+  	height:800px;
+	}
+}
+
+/**For tablet**/
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper{
+  	height:auto;
+	}
+
+}
+
+/**For phones**/
+@media (min-width: 577px) and (max-width: 767px) {
+ .wrapper{
+ 		height:auto;
+		background: none;
+	}
+}
+
+/**Extra small phones**/
+@media (max-width: 576px) {
+  .wrapper{
+  	min-width:350px;
+  	height:auto;
+	}
+}
+
