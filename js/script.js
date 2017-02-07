@@ -3,8 +3,8 @@ $(window).resize(function(){
 
 	$('.centered_this').css({
 		position:'absolute',
-		left: ($(document).width() - $('.centered_this').outerWidth())/2,
-		top: ($(document).height() - $('.centered_this').outerHeight())/2
+		left: ($('.wrapper').width() - $('.centered_this').outerWidth())/2,
+		top: ($('.wrapper').height() - $('.centered_this').outerHeight())/2
 	});
 
 });
