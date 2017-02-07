@@ -157,7 +157,7 @@ table {
 @media (max-width: 576px) {
   .wrapper{
   	min-width:350px;
-  	height:565px;
+  	height: 400px;
 	}
 	.my_info {
   	position: absolute;
