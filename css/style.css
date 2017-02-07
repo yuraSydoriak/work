@@ -1,4 +1,71 @@
+/*****************************RESET********************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, 
+em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, 
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, 
+legend, table, caption, tbody, tfoot, thead, tr, th, td, input { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: 0; 
+	font-size: 100%; 
+	vertical-align: baseline; 
+	background: transparent; 
+}
+body { 
+	line-height: 1;
+}
+ol, ul { 
+	list-style: none; 
+}
+blockquote, q { 
+	quotes: none; 
+}
+blockquote:before, blockquote:after, q:before, q:after { 
+	content: ''; 
+	content: none; 
+}
 
+/* remember to define focus styles! */
+:focus, a:hover, a:active, a:focus  { outline: 0 }
+/* remember to highlight inserts somehow! */
+ins { 
+	text-decoration: none; 
+}
+del { 
+	text-decoration: line-through; 
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table { 
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+
+/*******************************CLEARS**********************************/
+.clearer { 
+	clear:both; 
+	font-size:0px; 
+	line-height:0px; 
+	width:100%; 
+	height:0px; 
+	visibility: hidden; 
+}
+.clearfix:after { content: "."; 
+	display: block; 
+	height:0; 
+	clear: both; 
+	visibility: hidden; 
+}
+.clearfix { 
+	display: inline-block; 
+}
+/* Hides from IE-mac \*/
+* html .clearfix { 
+	height: 1%; 
+}
+.clearfix { 
+	display: block;
+}
 /*****************************ELEMENTS**********************************/
 .wrapper{
 	background: url(../img/main_El.jpg) no-repeat;
@@ -23,12 +90,41 @@
 	margin: 30px auto;
 	overflow:hidden;
 }
-.my_info h1, p {
+.my_info p {
 	text-transform: uppercase; 
 	text-align: center;
 	margin: 0;
 }
+.myName{
+	font-size: 25px;
+	font-weight: bold;
+}
 
+.section_links{
+	position:absolute;
+	bottom: 0;
+	width: 350px;
+	height: 50px;
+	border-radius: 0 0 7px 7px;
+	background-color: #4E7F69;
+}
+.section_links ul li {
+	display: inline-block;
+	cursor: pointer;
+	padding: 19px 11px 14px;
+	border-right: 1px solid #fff;
+	text-transform: uppercase; 
+}
+.section_links ul li:last-child {
+	border-right: none;
+}
+.section_links a{
+	text-decoration: none;
+	color: #fff;
+}
+.section_links a:hover{
+	text-shadow: 1px 1px 2px black;
+}
 /*******************************MEDIA**********************************/
 /**Extra large**/
 @media (min-width: 12000px) {
