@@ -160,8 +160,24 @@ table {
   	height: 400px;
 	}
 	.my_info {
-  	position: absolute;
-    top: 0px;
+		width:100%;
+  	background-color: rgba(255,255,255,0);
+	}
+	.my_info p {
+		color:#fff;
+	}
+	.section_links{
+		position:absolute;
+		bottom: 0;
+		width: 100%;
+		height: 50px;
+		border-radius: none;
+		background-color: #4E7F69;
+	}
+	.section_links ul li {
+		width: 32%;
+		font-size:13px;
+		text-align: center;
 	}
 }
 
