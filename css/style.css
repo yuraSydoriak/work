@@ -144,19 +144,12 @@ table {
   .wrapper{
   	height:565px;
 	}
-	.my_info{
-		position: absolute;
-    left: 203.5px;
-    top: 0;
-	}
-
 }
 
 /**For phones**/
 @media (min-width: 577px) and (max-width: 767px) {
  .wrapper{
- 		height:200px;
-		background: none;
+ 		height:565px;
 	}
 }
 
@@ -165,6 +158,10 @@ table {
   .wrapper{
   	min-width:350px;
   	height:565px;
+	}
+	.my_info {
+  	position: absolute;
+    top: 0px;
 	}
 }
 
