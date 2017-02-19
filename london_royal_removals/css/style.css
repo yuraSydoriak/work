@@ -140,6 +140,9 @@ section#main {
 	text-transform: uppercase;
 	padding-top: 70px;
 }
+.text_about {
+	padding-top: 70px;
+}
 /*=============section services===================*/
 section#services {
 	color: #666666;
@@ -186,4 +189,31 @@ section#services button.order_btn:hover {
 	background-color: #67cc67;
 	border: 2px solid #67cc67;
 }
-/*==============================*/
+/*===============section order_services===============*/
+section#order_services { 
+	padding-top: 70px;
+}
+section#order_services h2 { 
+	text-transform: uppercase;
+	color: #f93;
+	margin-bottom: 35px;
+}
+.form-control {
+	border-radius: 0;
+}
+input[name="name"] {
+	background: url(../img/name.input.png) no-repeat center left 5px;
+	padding: 25px;
+	padding-left: 30px;
+}
+input[name="phone"] {
+	background: url(../img/phone.input.png) no-repeat center left 5px;
+	padding: 25px;
+	padding-left: 30px;
+}
+section#order_services button { 
+	border: none;
+	color: #666666;
+	border:2px solid #67cc67;
+	padding: 17px 110px;
+}
