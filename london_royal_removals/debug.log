@@ -4,3 +4,6 @@
 [0218/210919:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Nolarry\Reports\Dump: Системе не удается найти указанный путь. (0x3)
 [0218/210919:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: Канал был закрыт. (0x6D)
 [0218/210919:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Nolarry\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0219/101041:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Nolarry\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0219/101041:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[0219/101041:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Nolarry\Reports\Dump: Системе не удается найти указанный путь. (0x3)
