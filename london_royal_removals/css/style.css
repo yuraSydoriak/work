@@ -46,6 +46,7 @@ table {
 /*==================================================*/
 body {
 	font-family: century gothic;
+	background: url(../img/body_bg.png);
 }
 header {
 	color:#666666;
@@ -96,8 +97,8 @@ section#main {
 .main_header h1 {
 	color: #fff;
 	text-transform: uppercase;
-	margin-top: 100px;
-	margin-bottom: 90px;
+	margin-top: 160px;
+	margin-bottom: 160px;
 }
 .main_header .strong_t {
 	background-color: rgba(103,204,103,0.6);
@@ -120,7 +121,7 @@ section#main {
 }
 #main .main_button {
  margin-top: 7px;
- margin-bottom: 90px;
+ margin-bottom: 150px;
 }
 #main .main_button button {
 	border: none;
@@ -141,7 +142,14 @@ section#main {
 	padding-top: 70px;
 }
 .text_about {
-	padding-top: 70px;
+	padding-top: 50px;
+}
+.text_about p {
+	line-height: 30px;
+	font-size: 17px;
+}
+.text_about .about_t_bold {
+	color: #ff9933;
 }
 /*=============section services===================*/
 section#services {
@@ -171,7 +179,6 @@ section#services button.more_btn:hover {
 	background-color: #67cc67;
 	color: #fff;
 }
-
 section#services button.order_btn {
 	border: none;
 	color: #fff;
@@ -188,6 +195,38 @@ section#services button.order_btn:hover {
 	color: #666666;
 	background-color: #67cc67;
 	border: 2px solid #67cc67;
+}
+
+/*===============section FEEDBACK===============*/
+section#feedback .section_header h2 { 
+	margin-bottom: 50px;
+}
+.carousel-indicators .active {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  background-color: #ff9933;
+  /*border: 1px solid #67cc67;*/
+}
+.carousel-indicators li {
+ display: inline-block;
+ width: 12px;
+ height: 12px;
+ margin: 1px;
+ text-indent: -999px;
+ cursor: pointer;
+ background-color: #67cc67;
+ background-color: #67cc67;
+ /*border: 1px solid #ff9933;*/
+ border-radius: 50%;
+}
+.customer {
+ text-transform: uppercase;
+}
+.cust_feedback {
+	padding-top: 15px;
+	line-height: 30px;
+	font-size: 17px;
 }
 /*===============section order_services===============*/
 section#order_services { 
@@ -217,3 +256,90 @@ section#order_services button {
 	border:2px solid #67cc67;
 	padding: 17px 110px;
 }
+/*===============CONATCTS===============*/
+section#contacts{
+	padding: 20px 0 20px;
+	background-color:#303338;
+	margin-top: 15px;
+	color:#fff;
+}
+section#contacts h2{
+	text-transform: uppercase;
+	font-weight: lighter;
+	margin-left: -20px;
+}
+section#contacts .address {
+	text-transform: uppercase;
+	color: #CECCCF;
+	padding: 10px 0;
+}
+
+section#contacts address .address:before{
+	content:'';
+	width: 16px;
+	height: 16px;
+	background: url(../img/map-marker-2-16.png) no-repeat center center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+section#contacts address .london_strt {
+	color: #fff;
+	font-size: 20px;
+}
+
+ section#contacts .phone_w {
+	text-transform: uppercase;
+	color: #CECCCF;
+	padding: 10px 0;
+}
+
+section#contacts .phone_w:before{
+	content:'';
+	width: 16px;
+	height: 16px;
+	background: url(../img/office-phone-icon.png) no-repeat center center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+section#contacts .number {
+	color: #fff;
+	font-size: 20px;
+}
+
+.social_icons{
+	margin-top: 20px;
+}
+.s_icon{
+	margin-right: 7px;
+	display:inline-block;
+	border-radius: 50%;
+}
+.s_icon:hover{
+	background-color: #67CC67;
+	-moz-transition: color 0.2s 0.02s ease;
+ 	-o-transition: color 0.2s 0.02s ease;
+ 	-webkit-transition: color 0.2s 0.02s ease;
+}
+/*===============FOOTER===============*/
+footer{
+	
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-color: #67CC67;
+	color: #fff;
+}
+footer h4{
+	text-transform: uppercase;
+}
+footer .details{
+	text-align: left
+}
+footer .developer{
+	text-align: right;
+}
+footer .developer a{
+	text-decoration: none;
+	color:#fff;
+
