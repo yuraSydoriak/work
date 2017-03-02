@@ -43,7 +43,72 @@ table {
 	border-spacing: 0;
 }
 
-/*==================================================*/
+button:focus {
+	outline: none;
+}
+
+/*==============Pre-loader===================*/
+.loaderArea {
+  background: linear-gradient(180deg, #00C483 10%, #fff 90%);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+}
+.loader {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+ 
+.loader:before,
+.loader:after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  border: 8px solid rgba(255,255,255,.5);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+}
+ 
+.loader:before {
+  animation: animate 2s infinite linear;
+}
+ 
+@keyframes animate {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(180deg) skew(360deg);
+  }
+}
+ 
+ 
+.loader:after {
+  animation: animate2 2s infinite linear;
+}
+ 
+@keyframes animate2 {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(-180deg) skew(-360deg);
+  }
+}
+
+/*=================================================*/
 body {
 	font-family: century gothic;
 	background: url(../img/body_bg.png);
@@ -67,7 +132,7 @@ header .descript h5 {
 	margin-bottom: 5px;
 }
 
-/*================navigation===================*/
+/*================ navigation ===================*/
 nav {
 	background-color: #fafafa;
 }
@@ -89,7 +154,7 @@ nav ul.list-inline a:hover{
 nav ul.list-inline {
 	margin-bottom: 0;
 }
-/*=============section main===================*/
+/*============= section main ===================*/
 section#main {
 	background: url(../img/main-poster1920x1080.jpg)no-repeat center center;
 	background-size: cover;
@@ -120,10 +185,10 @@ section#main {
 	color: #ff9933;
 }
 #main .main_button {
- margin-top: 7px;
+ margin-top: 30px;
  margin-bottom: 150px;
 }
-#main .main_button button {
+#order_main{
 	border: none;
 	background-color: #ff9933;
 	padding: 22px 30px;
@@ -131,27 +196,27 @@ section#main {
 	text-transform: uppercase;
 	font-size: 20px;
 }
-#main .main_button button:hover {
+#order_main:hover {
 	background-color: #d67513;
 }
 
-/*=============section about===================*/
+/*============= section about ===================*/
 .section_header h2 {
 	color: #666666;
 	text-transform: uppercase;
-	padding-top: 70px;
+	padding-top: 35px;
 }
 .text_about {
-	padding-top: 50px;
+	padding-top: 20px;
 }
 .text_about p {
 	line-height: 30px;
-	font-size: 17px;
+	font-size: 15px;
 }
 .text_about .about_t_bold {
 	color: #ff9933;
 }
-/*=============section services===================*/
+/*============= section services ===================*/
 section#services {
 	color: #666666;
 	text-transform: uppercase;
@@ -162,6 +227,9 @@ section#services .section_header {
 section#services .card h4 {
 	margin-top: 25px;
 	margin-bottom: 10px;
+}
+section#services .card {
+	margin-bottom: 60px;
 }
 
 section#services button.more_btn {
@@ -197,7 +265,7 @@ section#services button.order_btn:hover {
 	border: 2px solid #67cc67;
 }
 
-/*===============section FEEDBACK===============*/
+/*=============== section FEEDBACK ===============*/
 section#feedback .section_header h2 { 
 	margin-bottom: 50px;
 }
@@ -228,7 +296,7 @@ section#feedback .section_header h2 {
 	line-height: 30px;
 	font-size: 17px;
 }
-/*===============section order_services===============*/
+/*=============== section order_services ===============*/
 section#order_services { 
 	padding-top: 70px;
 }
@@ -245,18 +313,30 @@ input[name="name"] {
 	padding: 25px;
 	padding-left: 30px;
 }
+input[name="name"]:hover {
+	background-color: rgba(103,204,103,0.1);
+}
 input[name="phone"] {
 	background: url(../img/phone.input.png) no-repeat center left 5px;
 	padding: 25px;
 	padding-left: 30px;
 }
-section#order_services button { 
+input[name="phone"]:hover {
+	background-color: rgba(103,204,103,0.1);
+}
+
+button[type="submit"] { 
 	border: none;
 	color: #666666;
 	border:2px solid #67cc67;
-	padding: 17px 110px;
+	width: 100%;
+	padding: 17px;
 }
-/*===============CONATCTS===============*/
+button[type="submit"]:hover { 
+	background-color: rgb(103,204,103);
+	color: #fff;
+}
+/*=============== CONATCTS ===============*/
 section#contacts{
 	padding: 20px 0 20px;
 	background-color:#303338;
@@ -322,7 +402,7 @@ section#contacts .number {
  	-o-transition: color 0.2s 0.02s ease;
  	-webkit-transition: color 0.2s 0.02s ease;
 }
-/*===============FOOTER===============*/
+/*=============== FOOTER ===============*/
 footer{
 	
 	padding-bottom: 20px;
@@ -342,4 +422,30 @@ footer .developer{
 footer .developer a{
 	text-decoration: none;
 	color:#fff;
+}
 
+/*=============== Modal ===============*/
+.modal-dialog {
+	margin-top: 12%;
+	
+}
+.modal-content {
+	border-radius: 0;
+}
+.modal-header {
+	border-bottom: none;
+}
+.modal-body {
+	margin-top: -15px;
+}
+.header_modal h4 {
+	margin-bottom: 10px;
+}
+.form_input {
+	margin-bottom: 15px;
+}
+button[type="submit"] { 
+	margin-bottom: 25px;
+}
+
+/*=============== Media ===============*/

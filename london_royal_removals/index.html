@@ -21,6 +21,12 @@
   </head>
   <body>
 
+    <!--Pre-loader-->
+    <div class="loaderArea">
+      <div class="loader"></div>
+    </div>
+    <!--End Pre-loader-->
+
     <header>
       <div class="container">
         <div class="row">
@@ -79,7 +85,7 @@
           <h3>Ship with us, it is convenient. <span>Have fun !</span> </h3>
         </div>
         <div class="row main_button">
-          <button id="order_main" data-togle="modal" href="#">Order service</button>
+          <a id="order_main" href="#services">Order service</a>
         </div>
       </div>
     </section>
@@ -99,6 +105,9 @@
             </p>
           </div>
         </div>
+        <div class="row">
+          <img class="img-responsive" src="img/mercedes.png"></img>
+        </div>
       </div>
     </section>
 
@@ -110,40 +119,40 @@
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
           	<div class="card">
           		<img src="img/serv-1.png" alt="van and loader" class="img-responsive center-block">
           		<h4>van and loader</h4>
           		<br>
           		<button class="more_btn" data-toggle="modal" href="#">More...</button>
-          		<button class="order_btn" data-toggle="modal" href="#">Order</button>
+          		<button id="ordered" class="order_btn" data-toggle="modal" href="#order_main_modal">Order</button>
           	</div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
           	<div class="card">
           		<img src="img/serv-2.png" alt="small van" class="img-responsive center-block">
           		<h4>small van</h4>
           		<br>
           		<button class="more_btn" data-toggle="modal" href="#">More...</button>
-          		<button class="order_btn" data-toggle="modal" href="#">Order</button>
+          		<button id="ordered" class="order_btn" data-toggle="modal" href="#order_main_modal">Order</button>
           	</div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
           	<div class="card">
           		<img src="img/serv-3.png" alt="van" class="img-responsive center-block">
           		<h4>van</h4>
           		<br>
           		<button class="more_btn" data-toggle="modal" href="#">More...</button>
-          		<button class="order_btn" data-toggle="modal" href="#">Order</button>
+          		<button id="ordered" class="order_btn" data-toggle="modal" href="#order_main_modal">Order</button>
           	</div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
           	<div class="card">
           		<img src="img/serv-4.png" alt="long van" class="img-responsive center-block">
           		<h4>long van</h4>
           		<br>
           		<button class="more_btn" data-toggle="modal" href="#">More...</button>
-          		<button class="order_btn" data-toggle="modal" href="#">Order</button>
+          		<button id="ordered" class="order_btn" data-toggle="modal" href="#order_main_modal">Order</button>
           	</div>
           </div>
         </div>
@@ -154,7 +163,7 @@
       <div class="container">
         <div class="row">
           <div class="section_header text-center">
-            <h2>Feedbacks:</h2>
+            <h2>Feedback</h2>
           </div>
         </div>
         <div class="row">
@@ -288,18 +297,17 @@
     			<div class="col-md-9">
     				<h2>Order our services :</h2>
     				<div class="row">
-    					<div class="col-md-4">
-    						<form action="#">
-    						<input name="name" type=text required placeholder="Your name" class="form-control form_input">
-    					</div>
-    					<div class="col-md-4">
-    						<input name="phone" type=text required placeholder="Phone number" class="form-control form_input">
-    					</div>
-    					<div class="col-md-4">
-    						<button type="submit">Order</button>
-    					</form>
-    					</div>
-
+              <form action="#">
+      					<div class="col-md-4">
+      						<input name="name" type=text required placeholder="Your name" class="form-control form_input">
+      					</div>
+      					<div class="col-md-4">
+      						<input name="phone" type=text required placeholder="Phone number" class="form-control form_input">
+      					</div>
+      					<div class="col-md-4">
+      						<button type="submit">Order</button>
+      					</div>
+              </form>
     				</div>
     			</div>
     		</div>
@@ -354,14 +362,14 @@
    	<footer>
    		<div class="container">
 	   		<div class="row">
-	   			<div class="col-md-4 details">
+	   			<div class="col-md-4 col-sm-12 details">
 	   				<h4>London Royal Removals</h4>
 	   				<p>Stepan Evsiuc</p>
 	   			</div>
-	   			<div class="col-md-4 text-center">
+	   			<div class="col-md-4 col-sm-12 text-center">
 	   				<p>London 2013 - 2017</p>
 	   			</div>
-	   			<div class="col-md-4 developer">
+	   			<div class="col-md-4 col-sm-12 developer">
 	   				<h4>Site develop:</h4>
 	   				<a href="https://www.linkedin.com/in/yurii-sydoriak-2879169a/">Sydoriak Y.V.</a>
 	   			</div>
@@ -370,8 +378,8 @@
    	</footer>
 
     <!-- Modal -->
-        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+        <div class="modal fade" id="order_main_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm text-center">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -379,8 +387,25 @@
               </div>
               <div class="modal-body">
                <div class="row">
-                 
+                 <div class="header_modal">
+                   <h4>For ordering service leave your information</h4>
+                 </div>
                </div>
+
+              <div class="row">
+              <form action="#">
+                <div class="col-sm-12">
+                  <input name="name" type=text required placeholder="Your name" class="form-control form_input">
+                </div>
+                <div class="col-sm-12">
+                  <input name="phone" type=text required placeholder="Phone number" class="form-control form_input">
+                </div>
+                <div class="col-sm-12">
+                  <button type="submit">Order</button>
+                </div>
+              </form>
+            </div> 
+
               </div>
             </div>
           </div>
