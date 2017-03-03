@@ -154,6 +154,13 @@ nav ul.list-inline a:hover{
 nav ul.list-inline {
 	margin-bottom: 0;
 }
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-brand {
+	padding:0;
+	margin: 5px 0 0 5px;
+}
 /*============= section main ===================*/
 section#main {
 	background: url(../img/main-poster1920x1080.jpg)no-repeat center center;
@@ -449,3 +456,112 @@ button[type="submit"] {
 }
 
 /*=============== Media ===============*/
+@media (min-width: 0px) and (max-width: 320px){
+	
+}
+@media (min-width: 321px) and (max-width: 480px){
+	header {
+    padding: 10px 0;
+	}
+
+	.phone_number {
+		text-align: center;
+	}
+
+	
+	section#contacts h2{
+		text-align: center;
+		padding-top: 15px;
+	}
+
+	.social_icons {
+   text-align: center;
+	}
+
+	.s_icon {
+		margin: 0;
+   	padding: 15px 25px;
+	}
+	.s_icon:hover {
+		background-color: inherit;
+	}
+
+	footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+	}
+	footer .details {
+    text-align:center;
+    padding-bottom: 10px;
+	}
+	.developer {
+		padding-top: 15px;
+	}
+	.developer h4 {
+		display: inline-block;
+		font-size: 15px;
+		text-transform: lowercase;
+		padding-right: 5px;
+	}
+	.developer a {
+		text-align: right;
+		font-size: 15px;
+		padding-top: 1px;
+	}
+}
+@media (min-width: 481px) and (max-width: 768px){
+	header {
+    padding: 10px 0;
+	}
+
+	.phone_number {
+		text-align: center;
+	}
+
+	
+	section#contacts h2{
+		text-align: center;
+		padding-top: 15px;
+	}
+
+	.social_icons {
+   text-align: center;
+	}
+
+	.s_icon {
+		margin: 0;
+   	padding: 15px 25px;
+	}
+	.s_icon:hover {
+		background-color: inherit;
+	}
+
+	footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+	}
+	footer .details {
+    text-align:center;
+    padding-bottom: 10px;
+	}
+	.developer {
+		padding-top: 15px;
+	}
+	.developer h4 {
+		display: inline-block;
+		font-size: 15px;
+		text-transform: lowercase;
+		padding-right: 5px;
+	}
+	.developer a {
+		text-align: right;
+		font-size: 15px;
+		padding-top: 1px;
+	}
+}
+@media (min-width: 769px) and (max-width: 992px){
+	
+}
+@media (min-width: 993px) and (max-width: 1200px){
+	
+}
