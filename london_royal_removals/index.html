@@ -153,7 +153,7 @@
           		<img src="img/serv-1.png" alt="van and loader" class="img-responsive center-block">
           		<h4>van and loader</h4>
           		<br>
-          		<button class="more_btn" data-toggle="modal" href="#">More...</button>
+          		<button class="more_btn" data-toggle="modal" href="#more_vanloader_modal">More...</button>
           		<button id="ordered" class="order_btn" data-toggle="modal" href="#order_main_modal">Order</button>
           	</div>
           </div>
@@ -162,7 +162,7 @@
           		<img src="img/serv-2.png" alt="small van" class="img-responsive center-block">
           		<h4>small van</h4>
           		<br>
-          		<button class="more_btn" data-toggle="modal" href="#">More...</button>
+          		<button class="more_btn" data-toggle="modal" href="#more_smallvan_modal">More...</button>
           		<button id="ordered" class="order_btn" data-toggle="modal" href="#order_main_modal">Order</button>
           	</div>
           </div>
@@ -171,7 +171,7 @@
           		<img src="img/serv-3.png" alt="van" class="img-responsive center-block">
           		<h4>van</h4>
           		<br>
-          		<button class="more_btn" data-toggle="modal" href="#">More...</button>
+          		<button class="more_btn" data-toggle="modal" href="#more_van_modal">More...</button>
           		<button id="ordered" class="order_btn" data-toggle="modal" href="#order_main_modal">Order</button>
           	</div>
           </div>
@@ -180,7 +180,7 @@
           		<img src="img/serv-4.png" alt="long van" class="img-responsive center-block">
           		<h4>long van</h4>
           		<br>
-          		<button class="more_btn" data-toggle="modal" href="#">More...</button>
+          		<button class="more_btn" data-toggle="modal" href="#more_longvan_modal">More...</button>
           		<button id="ordered" class="order_btn" data-toggle="modal" href="#order_main_modal">Order</button>
           	</div>
           </div>
@@ -324,14 +324,26 @@
     				<img src="img/b.png" alt="" class="img-responsive center-block ordered">
     			</div>
     			<div class="col-md-9">
-    				<h2>Order our services :</h2>
+    				<h2> Order our services :</h2>
     				<div class="row">
+
               <form action="#">
       					<div class="col-md-4">
-      						<input name="name" type=text required placeholder="Your name" class="form-control form_input">
+                  <span class="input input--yoshiko">
+                    <input name="name" class="input__field input__field--yoshiko" type="text" id="input-10" />
+                      <label class="input__label input__label--yoshiko" for="input-10">
+                        <span class="input__label-content input__label-content--yoshiko" data-content="Your name">Your name</span>
+                    </label>
+                  </span>
       					</div>
+
       					<div class="col-md-4">
-      						<input name="phone" type=text required placeholder="Phone number" class="form-control form_input">
+                  <span class="input input--yoshiko">
+                    <input name="phone" class="input__field input__field--yoshiko" type="text" id="input-11" />
+                      <label class="input__label input__label--yoshiko" for="input-11">
+                        <span class="input__label-content input__label-content--yoshiko" data-content="Phone number">Phone number</span>
+                    </label>
+                   </span>
       					</div>
       					<div class="col-md-4">
       						<button type="submit">Order</button>
@@ -410,13 +422,12 @@
    		</div>
    	</footer>
 
-    <!-- Modal -->
-        <div class="modal fade" id="order_main_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--Small Modal -->
+        <div id="order_main_modal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-sm text-center">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                
               </div>
               <div class="modal-body">
                <div class="row">
@@ -426,23 +437,218 @@
                </div>
 
               <div class="row">
-              <form action="#">
-                <div class="col-sm-12">
-                  <input name="name" type=text required placeholder="Your name" class="form-control form_input">
-                </div>
-                <div class="col-sm-12">
-                  <input name="phone" type=text required placeholder="Phone number" class="form-control form_input">
-                </div>
-                <div class="col-sm-12">
-                  <button type="submit">Order</button>
-                </div>
-              </form>
-            </div> 
+                <form action="#">
+                  <div class="col-md-12">
+                    <span class="input input--yoshiko">
+                      <input name="name" class="input__field input__field--yoshiko" type="text" id="input-10" />
+                        <label class="input__label input__label--yoshiko" for="input-10">
+                          <span class="input__label-content input__label-content--yoshiko" data-content="Your name">Your name</span>
+                      </label>
+                    </span>
+                  </div>
 
-              </div>
+                  <div class="col-md-12">
+                    <span class="input input--yoshiko">
+                      <input name="phone" class="input__field input__field--yoshiko" type="text" id="input-11" />
+                        <label class="input__label input__label--yoshiko" for="input-11">
+                          <span class="input__label-content input__label-content--yoshiko" data-content="Phone number">Phone number</span>
+                      </label>
+                     </span>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+               </div>
+              </div><!--End modal-body-->
             </div>
           </div>
         </div>
+
+    
+        <!-- Large modal VAN AND LOADER -->
+        <div id="more_vanloader_modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg text-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="row">
+                 <div class="header_modal">
+                   <h4>Van and loader by agreement</h4>
+                 </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12"><img src="img/loader.png" alt="" class="responsive center-block"></div>
+                  <div class="col-lg-5 col-md-5 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1 text_modal_wind">
+                    <p>Rent man and van services in London for your move in the capital and make your life easier. If you need a van to move, the company «London Royal Removals» offers its services. For you we will find the best in all respects moving van and a team of professional movers in the shortest possible time.
+                    </p>
+                    </br>
+                    <p class="hidden-xs">Here you can order moving van with loaders for the organization:</br>
+                    - Apartment moving;</br>
+                    - Office moves;</br>
+                    - Flat removals;</br>
+                    - Loading and delivery of furniture and household appliances from a warehouse store or any other place;</br>
+                    - House removals;</br>
+                    - Domestic removals in London especially eastern and northern parts.</br>
+                    Ordering a van and louder from London Royal Removals means that you're hiring a team of the best-trained removal technicians in London.
+                    Our team consists of moving professionals conscientious and diligent experts.They are good trained and equipped with the latest tools and equipment to complete the work. Our team also knows London pretty well !</p>
+                  </div>               
+               </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Large modal SMALL VAN -->
+        <div id="more_smallvan_modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg text-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="row">
+                 <div class="header_modal">
+                   <h4>Small moving van</h4>
+                 </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12"><img src="img/small_van.png" alt="" class="img-responsive center-block"></div>
+                  <div class="col-md-5 col-sm-12 text_modal_wind">
+                    <div class="row text-center"><h4 class="removals_price">Removals price:</h4></div>
+                    <div class="row text-center"><p class="price_txt">20</p></div>
+                    <div class="row text-center"><p> &#163 / 1 hour</p></div>
+                    </br>
+                  </div>               
+               </div>
+
+               <div class="row block_txt">
+                  <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+                    <img src="img/small_van5m.png" alt="" class="img-responsive center visible-md visible-lg">
+                  </div>
+
+                 <div class="col-md-6 van_parameters">
+                    <div class="row col-md-5 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-4 col-xs-offset-2">
+                      <div class="row text-left"><p>Length:</p></div>
+                      <div class="row text-left"><p>With:</p></div>
+                      <div class="row text-left"><p>Heigh:</p></div>
+                      <div class="row text-left"><p>Bulk:</p></div>
+                      <div class="row text-left"><p>Lifting capasity:</p></div>
+                      <div class="row text-left"><p>Seats:</p></div>
+                  </div>
+                  <div class="row col-md-6 col-sm-5 col-xs-5">
+                      <div class="row text-right"><p>2.4 m</p></div>
+                      <div class="row text-right"><p>1.5 m</p></div>
+                      <div class="row text-right"><p>1.4 m</p></div>
+                      <div class="row text-right"><p>5</p></div>
+                      <div class="row text-right"><p>800 kg</p></div>
+                      <div class="row text-right"><p>2 seats</p></div>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Large modal VAN -->
+        <div id="more_van_modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg text-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="row">
+                 <div class="header_modal">
+                   <h4>Moving van</h4>
+                 </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12"><img src="img/van.png" alt="" class="img-responsive center-block"></div>
+                  <div class="col-md-5 col-sm-12 text_modal_wind">
+                    <div class="row text-center"><h4 class="removals_price">Removals price:</h4></div>
+                    <div class="row text-center"><p class="price_txt">25</p></div>
+                    <div class="row text-center"><p>&#163 / 1 hour</p></div>
+                    </br>
+                  </div>               
+               </div>
+
+               <div class="row block_txt">
+                  <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+                    <img src="img/van_9m.png" alt="" class="img-responsive center visible-md visible-lg">
+                  </div>
+
+                 <div class="col-md-6 van_parameters">
+                    <div class="row col-md-5 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-4 col-xs-offset-2">
+                      <div class="row text-left"><p>Length:</p></div>
+                      <div class="row text-left"><p>With:</p></div>
+                      <div class="row text-left"><p>Heigh:</p></div>
+                      <div class="row text-left"><p>Bulk:</p></div>
+                      <div class="row text-left"><p>Lifting capasity:</p></div>
+                      <div class="row text-left"><p>Seats:</p></div>
+                  </div>
+                  <div class="row col-md-6 col-sm-5 col-xs-5">
+                      <div class="row text-right"><p>3.2 m</p></div>
+                      <div class="row text-right"><p>1.7 m</p></div>
+                      <div class="row text-right"><p>1.8 m</p></div>
+                      <div class="row text-right"><p>9</p></div>
+                      <div class="row text-right"><p>1200 kg</p></div>
+                      <div class="row text-right"><p>2 seats</p></div>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Large modal Long VAN -->
+        <div id="more_longvan_modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg text-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="row">
+                 <div class="header_modal">
+                   <h4>Long moving van</h4>
+                 </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12"><img src="img/long_van.png" alt="" class="img-responsive center-block"></div>
+                  <div class="col-md-5 col-sm-12 text_modal_wind">
+                    <div class="row text-center"><h4 class="removals_price">Removals price:</h4></div>
+                    <div class="row text-center"><p class="price_txt">27</p></div>
+                    <div class="row text-center"><p>&#163 / 1 hour</p></div>
+                    </br>
+                  </div>               
+               </div>
+
+               <div class="row block_txt">
+                  <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+                    <img src="img/long_van13m.png" alt="" class="img-responsive center visible-md visible-lg">
+                  </div>
+
+                 <div class="col-md-6 van_parameters">
+                    <div class="row col-md-5 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-4 col-xs-offset-2">
+                      <div class="row text-left"><p>Length:</p></div>
+                      <div class="row text-left"><p>With:</p></div>
+                      <div class="row text-left"><p>Heigh:</p></div>
+                      <div class="row text-left"><p>Bulk:</p></div>
+                      <div class="row text-left"><p>Lifting capasity:</p></div>
+                      <div class="row text-left"><p>Seats:</p></div>
+                  </div>
+                  <div class="row col-md-6 col-sm-5 col-xs-5">
+                      <div class="row text-right"><p>4.2 m</p></div>
+                      <div class="row text-right"><p>1.7 m</p></div>
+                      <div class="row text-right"><p>1.9 m</p></div>
+                      <div class="row text-right"><p>13</p></div>
+                      <div class="row text-right"><p>1500 kg</p></div>
+                      <div class="row text-right"><p>2 seats</p></div>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -450,6 +656,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/classie.js"></script>
     <script src="js/main.js"></script>
     <script>
       new WOW().init();
@@ -461,5 +668,6 @@
           }
       );
     </script>
+
   </body>
 </html>
