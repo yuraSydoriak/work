@@ -166,7 +166,10 @@ nav ul.navbar-nav li a:hover{
 }
 /*============= section main ===================*/
 section#main {
-	background: url(../img/main-poster1920x1080.jpg)no-repeat center center;
+	background: url(../img/main-poster1920x1080.jpg)no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 	background-size: cover;
 }
 .main_header h1 {
