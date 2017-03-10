@@ -11,6 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,11 +22,11 @@
   </head>
   <body>
 
-    <!--Pre-loader-->
-    <div class="loaderArea">
-      <div class="loader"></div>
-    </div>
-    <!--End Pre-loader-->
+      <!--Pre-loader
+      <div class="loaderArea">
+        <div class="loader"></div>
+      </div>
+      End Pre-loader-->
 
     <header>
       <div class="container">
@@ -45,36 +46,9 @@
       </div>
     </header>
 
-    <nav class="hidden-xs" id="menu">
+    <nav id="menu" class="navbar navbar-default" >
       <div class="container">
-        <div class="row">
-          <ul class="list-inline">
-            <a href="#">
-              <li>Main</li>
-            </a>
-            <a href="#about_us">
-              <li>About us</li>
-            </a>
-            <a href="#services">
-              <li>Services</li>
-            </a>
-            <a href="#feedback">
-              <li>Feedback</li>
-            </a>
-            <a href="#order_services">
-              <li>Order services</li>
-            </a>
-            <a href="#contacts">
-              <li>Contacts</li>
-            </a>
-          </ul>
-        </div>  
-      </div>
-    </nav>
 
-    <nav id="menu"class=" visible-xs navbar navbar-default" >
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -82,38 +56,35 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img class="img-responsive" src="img/logo.png" alt="logotype" width="45" height="45" center center></a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav list-inline text-center">
-            <li class="active"><a href="#">Main <span class="sr-only">(current)</span></a></li>
-            <li><a href="#about_us">About us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#feedback">Feedback</a></li>
-            <li><a href="#order_services">Order services</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav text-center">
+              <li><a href="#main">Main</a></li>
+              <li><a href="#about_us">About us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#feedback">Feedback</a></li>
+              <li><a href="#order_services">Order services</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+
+      </div>
     </nav>
-
-
 
     <section id="main">
       <div class="container">
-        <div class="row main_header">
+        <div class="row wow fadeInUp main_header" data-wow-delay="0.4s">
           <h1>
             <span class="strong_t">Shiping anything</span> <span class="sm_t hidden-xs">house, office, furniture, flat removals</span> <br>
             <span class="strong_t">anytime and</span> <span class="sm_t hidden-xs">24/7</span> <br> 
             <span class="strong_t">anywhere in London </span> <span class="sm_t hidden-xs">just tell us - where !</span>
           </h1>
         </div>
-        <div class="row">
+        <div class="row wow fadeInLeft" data-wow-delay="0.4s">
           <h3>Ship with us, it is convenient. <span>Have fun !</span> </h3>
         </div>
-        <div class="row main_button">
+        <div class="row main_button wow fadeInLeft" data-wow-delay="0.6s">
           <a id="order_main" href="#services">Order service</a>
         </div>
       </div>
@@ -134,7 +105,7 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row wow zoomIn" data-wow-delay="0.4s">
           <img class="img-responsive" src="img/mercedes.png"></img>
         </div>
       </div>
@@ -149,7 +120,7 @@
         </div>
         <div class="row text-center">
           <div class="col-md-3 col-sm-6">
-          	<div class="card">
+          	<div class="card wow bounceInUp" data-wow-delay="0.2s">
           		<img src="img/serv-1.png" alt="van and loader" class="img-responsive center-block">
           		<h4>van and loader</h4>
           		<br>
@@ -158,7 +129,7 @@
           	</div>
           </div>
           <div class="col-md-3 col-sm-6">
-          	<div class="card">
+          	<div class="card wow bounceInUp" data-wow-delay="0.4s">
           		<img src="img/serv-2.png" alt="small van" class="img-responsive center-block">
           		<h4>small van</h4>
           		<br>
@@ -167,7 +138,7 @@
           	</div>
           </div>
           <div class="col-md-3 col-sm-6">
-          	<div class="card">
+          	<div class="card wow bounceInUp" data-wow-delay="0.6s">
           		<img src="img/serv-3.png" alt="van" class="img-responsive center-block">
           		<h4>van</h4>
           		<br>
@@ -176,7 +147,7 @@
           	</div>
           </div>
           <div class="col-md-3 col-sm-6">
-          	<div class="card">
+          	<div class="card wow bounceInUp" data-wow-delay="0.8s">
           		<img src="img/serv-4.png" alt="long van" class="img-responsive center-block">
           		<h4>long van</h4>
           		<br>
@@ -207,54 +178,40 @@
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
               <li data-target="#myCarousel" data-slide-to="2"></li>
-              <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="3" -->
+              <!-- Перейти к 3 слайду карусели с помощью соответствующего индекса data-slide-to="3" -->
               <li data-target="#myCarousel" data-slide-to="3"></li>
+              <!-- Перейти к 4 слайду карусели с помощью соответствующего индекса data-slide-to="4" -->
+              <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>   
             <!-- Слайды карусели -->
             <div class="carousel-inner">
               <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
               <div class="active item">
                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="video">
-                      <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BQwDyJ3Ao9f/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от London Royal Removals (@london_royal_removals)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-02-20T22:55:10+00:00">Фев 20 2017 в 2:55 PST</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fedb_img">
+                      <img width="275" height="275" src="https://scontent-waw1-1.cdninstagram.com/t51.2885-15/s640x640/e15/16584059_667873353385564_824544024734990336_n.jpg" alt="" class="img-responsive center-block">
                     </div>
                   </div>
-                  <div class="col-md-8">
-                    <div class="row">
-                      <div class="col-md-3 cost_avatar">
-                        <img width="140" height="140" src="https://scontent-waw1-1.cdninstagram.com/t51.2885-15/s640x640/e15/16584059_667873353385564_824544024734990336_n.jpg" alt="" class="img-circle hidden-xs">
-                      </div>
-                      <div class="col-md-9 customer">
-                        <h5 class="hidden-xs">Our customer</h5>
-                      </div>
+                  <div class="col-md-9 col-sm-6 col-xs-12">
+                    <div class="cust_feedback">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt non doloribus accusantium neque, officia obcaecati. Accusamus dolorem ad porro, minima commodi ratione recusandae deleniti, dolorum dicta ullam beatae, neque saepe.</p>
                     </div>
-                    <div class="row cust_feedback">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt non doloribus accusantium neque, officia obcaecati. Accusamus dolorem ad porro, minima commodi ratione recusandae deleniti, dolorum dicta ullam beatae, neque saepe.</p>
-                      </div>
                   </div>
                 </div>
               </div>
               <!-- Slide №2 -->
               <div class="item">
                <div class="row">
-                  <div class="col-md-4">
-                    <div class="video">
-                      <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BNpQyXFhOdz/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от London Royal Removals (@london_royal_removals)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-12-05T17:59:55+00:00">Дек 5 2016 в 9:59 PST</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fedb_img">
+                      <img width="275" height="275" src="https://scontent-waw1-1.cdninstagram.com/t51.2885-15/s640x640/e15/14677245_1049628641829230_7602386572582846464_n.jpg" alt="" class="img-responsive center-block">
                     </div>
                   </div>
-                  <div class="col-md-8">
-                    <div class="row">
-                      <div class="col-md-3 cost_avatar">
-                        <img width="140" height="140" src="https://scontent-waw1-1.cdninstagram.com/t51.2885-15/s640x640/e15/14677245_1049628641829230_7602386572582846464_n.jpg" alt="" class="img-circle hidden-xs">
-                      </div>
-                      <div class="col-md-9 customer">
-                        <h5 class="hidden-xs">Our customer</h5>
-                      </div>
+                  <div class="col-md-9 col-sm-6 col-xs-12">
+                    <div class="cust_feedback">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt non doloribus accusantium neque, officia obcaecati. Accusamus dolorem ad porro, minima commodi ratione recusandae deleniti, dolorum dicta ullam beatae, neque saepe.</p>
                     </div>
-                    <div class="row cust_feedback">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt non doloribus accusantium neque, officia obcaecati. Accusamus dolorem ad porro, minima commodi ratione recusandae deleniti, dolorum dicta ullam beatae, neque saepe.</p>
-                      </div>
                   </div>
                 </div>
               </div>
@@ -262,25 +219,15 @@
               <!-- Slide №3-->
               <div class="item">
                <div class="row">
-                  <div class="col-md-4">
-                    <div class="video">
-                      <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BDQW_ScE4_2/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от London Royal Removals (@london_royal_removals)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-03-22T12:39:09+00:00">Мар 22 2016 в 5:39 PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fedb_img">
+                      <img width="275" height="275" src="https://scontent-waw1-1.cdninstagram.com/t51.2885-15/e15/12383244_763545497113503_1513467000_n.jpg" alt="" class="img-responsive center-block">
                     </div>
                   </div>
-                  <div class="col-md-8">
-                    <div class="row">
-                      <div class="col-md-3 cost_avatar">
-                        <img width="140" height="140" src="https://scontent-waw1-1.cdninstagram.com/t51.2885-15/e15/12383244_763545497113503_1513467000_n.jpg" alt="" class="img-circle hidden-xs">
-                      </div>
-                      <div class="col-md-9 customer">
-                        <h5 class="hidden-xs">Our customer</h5>
-                      </div>
+                  <div class="col-md-9 col-sm-6 col-xs-12">
+                    <div class="cust_feedback">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt non doloribus accusantium neque, officia obcaecati. Accusamus dolorem ad porro, minima commodi ratione recusandae deleniti, dolorum dicta ullam beatae, neque saepe.</p>
                     </div>
-                    <div class="row cust_feedback">
-                        <p>ashton_evanz : @london_royal_removals Check it out @eighty6sunnies <br>
-                          kinggudluv : Peace Love & Soul....#gudluv <br>
-                          ankipermoda : Lovely ! 💞 👍</p>
-                      </div>
                   </div>
                 </div>
               </div>
@@ -288,27 +235,35 @@
               <!-- Slide №4 -->
               <div class="item">
                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="video">
-                      <blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BNKNmirhALD/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от London Royal Removals (@london_royal_removals)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-11-23T16:35:38+00:00">Ноя 23 2016 в 8:35 PST</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fedb_img">
+                      <img width="275" height="275" src="https://scontent-waw1-1.cdninstagram.com/t51.2885-15/s640x640/e15/14553295_251707858577897_1659760321646034944_n.jpg" alt="" class="img-responsive center-block">
                     </div>
                   </div>
-
-                  <div class="col-md-8">
-                    <div class="row">
-                      <div class="col-md-3 cost_avatar">
-                        <img width="140" height="140" src="https://scontent-waw1-1.cdninstagram.com/t51.2885-15/s640x640/e15/14553295_251707858577897_1659760321646034944_n.jpg" alt="" class="img-circle hidden-xs">
-                      </div>
-                      <div class="col-md-9 customer">
-                        <h5 class="hidden-xs">Our customer</h5>
-                      </div>
-                    </div>
-                    <div class="row cust_feedback">
-                        <p>Removals service best price ...good customer)))</p>
+                  <div class="col-md-9 col-sm-6 col-xs-12">
+                    <div class="cust_feedback">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt non doloribus accusantium neque, officia obcaecati. Accusamus dolorem ad porro, minima commodi ratione recusandae deleniti, dolorum dicta ullam beatae, neque saepe.</p>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Slide №5 -->
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fedb_img">
+                      <img width="275" height="275" src="https://scontent-bru2-1.cdninstagram.com/t51.2885-15/s640x640/e15/15275486_279765405754743_1079634536309981184_n.jpg" alt="" class="img-responsive center-block">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-6 col-xs-12">
+                    <div class="cust_feedback">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt non doloribus accusantium neque, officia obcaecati. Accusamus dolorem ad porro, minima commodi ratione recusandae deleniti, dolorum dicta ullam beatae, neque saepe.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           
           </div>
@@ -321,7 +276,7 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-3">
-    				<img src="img/b.png" alt="" class="img-responsive center-block ordered">
+    				<img src="img/b.png" alt="order service" class="img-responsive center-block ordered hidden-sm hidden-xs">
     			</div>
     			<div class="col-md-9">
     				<h2> Order our services :</h2>
@@ -358,46 +313,44 @@
    	<section id="contacts">
    		<div class="container">
    			<div class="row">
-   				<div class="col-md-5 col-md-offset-2">
+   				<div class="col-md-5 col-md-offset-2 col-xs-12">
    					<div class="map">
                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_Oc7JKANl0xq4nbUgDOGzLmBtxTuEcI3&amp;width=100%25&amp;height=400&amp;lang=ru_UA&amp;sourceType=constructor&amp;scroll=true"></script>   
             </div>
    				</div>
 
-   				<div class="col-md-5 col-xm -12">
-   					
+   				<div class="col-md-5 col-sm-12 col-xs-12">
             <h2>Contacts</h2>
-
-   					<div class="row">
-	   					<address>
-	   						<p class="address">
-	   							Address:
-	   						</p>
-	   						<p class="london_strt">
-	   							Folkestone Rd, London E6 6AY
-	   						</p>
-	   					</address>
-   					</div>
-
-   					<div class="row">
+	   				<address>
+	   					<p class="address">
+	   						Address:
+	   					</p>
+	   					<p class="london_strt">
+	   						Folkestone Rd, London E6 6AY
+	   					</p>
+              </address>
 	   					<div class="phone_numb">
-	   						<p class="phone_w">
-	   							Phone:
-	   						</p>
-	   						<p class="number"> 
-								077-3658-3663
-	   						</p>
+                <p class="phone_w">
+                  Phone:
+                </p>
+                <p class="number"> 
+                077-3658-3663
+                </p>
                 <p class="number"> 
                 074-8147-8176
                 </p>
-	   					</div>
+              </div>
+
+               <div class="social_icons">
+                <div class="s_icon"><a href="https://www.facebook.com/profile.php?id=100000846680310" target="_blank"><img src="img/facebook_ic.png" alt=""></a></div>
+                <div class="s_icon"><a href="https://www.instagram.com/london_royal_removals/" target="_blank"><img src="img/instag_ic.png" alt=""></a></div>
+                <div class="s_icon"><a href="https://vk.com/id19618021" target="_blank"><img src="img/vk_ic.png" alt=""></a></div>
+                <div class="s_icon"><a href="mailto:royalremovalsservice@gmail.com" target="_blank"><img src="img/mail_ic.png" alt="css/"></a></div>
+              </div>
+
    					</div>
-   					<div class="row social_icons">
-   						<div class="s_icon"><a href="https://www.facebook.com/profile.php?id=100000846680310" target="_blank"><img src="img/facebook_ic.png" alt=""></a></div>
-   						<div class="s_icon"><a href="https://www.instagram.com/london_royal_removals/" target="_blank"><img src="img/instag_ic.png" alt=""></a></div>
-              <div class="s_icon"><a href="https://vk.com/id19618021" target="_blank"><img src="img/vk_ic.png" alt=""></a></div>
-              <div class="s_icon"><a href="mailto:royalremovalsservice@gmail.com" target="_blank"><img src="img/mail_ic.png" alt=""></a></div>
-   					</div>
+
+   					
    				</div>
    			</div>
    		</div>
@@ -661,6 +614,23 @@
     <script>
       new WOW().init();
     </script>
+
+    <script>
+     var h_hght = 100; // высота шапки
+     var h_mrg = 0;     // отступ когда шапка уже не видна
+     $(function(){
+      $(window).scroll(function(){
+         var top = $(this).scrollTop();
+         var elem = $('#menu');
+         if (top+h_mrg < h_hght) {
+          elem.css('top', (h_hght-top));
+         } else {
+          elem.css('top', h_mrg);
+         }
+       });
+     });
+   </script>
+
     <script>
       $(document).ready(
           function() {
@@ -668,6 +638,6 @@
           }
       );
     </script>
-
+  
   </body>
 </html>
