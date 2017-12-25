@@ -1,0 +1,171 @@
+/*****************************RESET********************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, 
+em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, 
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, 
+legend, table, caption, tbody, tfoot, thead, tr, th, td, input { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: 0; 
+	vertical-align: baseline; 
+	background: transparent; 
+}
+body { 
+	line-height: 1;
+}
+ol, ul { 
+	list-style: none; 
+}
+blockquote, q { 
+	quotes: none; 
+}
+blockquote:before, blockquote:after, q:before, q:after { 
+	content: ''; 
+	content: none; 
+}
+/* remember to define focus styles! */
+a:focus, a:hover, a:active, a:focus, a:visited  { 
+	outline: 0;
+	text-decoration: none;
+ }
+/* remember to highlight inserts somehow! */
+ins { 
+	text-decoration: none; 
+}
+del { 
+	text-decoration: line-through; 
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table { 
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+
+button:focus {
+	outline: none;
+}
+div {
+	box-sizing: border-box;
+}
+
+/****************************** Header *********************************/
+
+
+
+body {
+	font-family: "Open Sans", Arial, san-serif;
+	font-size: 14px;
+	color: #4d4d4d;
+}
+.wrapper {
+	max-width: 1210px;
+	margin: 0 auto;
+}
+header {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+.navbar {
+	font-family: Montserrat;
+	text-transform: uppercase;
+	justify-content: space-between;
+}
+.navbar-brand {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 700;
+}
+.navbar-brand:hover {
+	color: #fce38a;
+}
+.navbar-nav {
+	position: absolute;
+	right: 0;
+}
+.navbar-nav li {
+	margin-left: 50px;
+	height: 30px;
+}
+.navbar-nav li:hover {
+	color: #fce38a;
+	border-bottom: 2px solid #fce38a;
+}
+.navbar-nav li a{
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.navbar-nav li a:hover {
+	color: #fce38a;
+}
+/*********** Banner ***********/
+.banner {
+	height: 1000px;
+	background: url(../img/banner.jpg) no-repeat center top;
+	background-size: cover;
+	padding-top: 350px;
+	position: relative;
+}
+.banner:after {
+	background: transparent;
+	background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.banner-wrapper {
+	position: relative;
+	z-index: 98;
+}
+.banner h1 {
+	color: #ffffff;
+	font-family: "Kaushan Script";
+	font-size: 72px;
+	font-weight: 400;
+	margin-bottom: 45px;
+}
+.banner span {
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 150px;
+	font-weight: 700;
+	line-height: 140px;
+	margin-bottom: 70px;
+	text-transform: uppercase;
+}
+.banner span:after {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #ffffff;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	margin-top: 60px;
+}
+.banner .btn {
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 3px solid #ffffff;
+	margin-top: 150px;
+}
+.banner .btn:hover {
+	color: #4d4d4d;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
