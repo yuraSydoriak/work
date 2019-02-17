@@ -23,7 +23,7 @@ header {
     background-color: #fff;
     color: #8e8e8e;
 }
-header .wrapper .left-side,
+header .wrapper .left-side .welcome-block,
 header .wrapper .center-side,
 header .wrapper .right-side {
     display: flex;
