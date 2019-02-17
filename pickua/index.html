@@ -1,97 +1,73 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-<header>
-    <div class="container-max">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="wrapper">
-
-                        <div class="header-left-side">
-                            <div class="tel-number">099 1234567</div>
-                        </div>
-
-                        <div class="header-center visible-xs">
-                            <div class="logo">PICKUA</div>
-                        </div>
-
-                        <div class="header-right-side hidden-xs">
-                            <div class="login-form">
-                                <form method="post" name="search" action="https://pickua.000webhostapp.com/login"
-                                      id="loginForm" class="headerLoginForm">
-                                    <div class="login-form-field">
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png">
-                                        <input type="text" name="login" value="" placeholder="login" id="LoginText">
-                                    </div>
-                                    <div class="login-form-field">
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png">
-                                        <input type="password" name="password" value="" placeholder="password"
-                                               id="PasswordText">
-                                    </div>
-                                    <button id="LoginGo">Вхід</button>
-
-                                    <a href="registration" class="bmenu"><b>реєстрація</b></a>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="header-right-side visible-xs">
-                            <div class="mobile-login-btn">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png">
-                                <span>Вхід</span>
-                            </div>
-
-                            <div class="login-form-mobile" style="display: none">
-
-                                <div class="closeModalBtn">
-                                    <i class="fa fa-times"></i>
-                                </div>
-
-                                <div class="login-form-mobile-wrap">
-                                    <form method="post" name="search" action="https://pickua.000webhostapp.com/login"
-                                          id="loginForm" class="headerLoginForm">
-                                        <div class="login-form-field">
-                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png">
-                                            <input type="text" name="login" value="" placeholder="login" id="LoginText">
-                                        </div>
-                                        <div class="login-form-field">
-                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png">
-                                            <input type="password" name="password" value="" placeholder="password"
-                                                   id="PasswordText">
-                                        </div>
-                                        <div class="submit-block">
-                                            <div><button id="LoginGo">Вхід</button></div>
-                                            <div><a href="registration" class="bmenu"><b>реєстрація</b></a></div>
-                                        </div>
-                                    </form>
+    <header>
+        <div class="container-max">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="wrapper">
+                            <div class="left-side">
+                                <div class="welcome-block">
+                                    <span class="hidden-xs">Вітаємо, на</span>
+                                    <span class="visible-xs">Ви, на</span>
+                                    <span>PickUA</span>
                                 </div>
                             </div>
 
-                        </div>
+                            <div class="center-side">
 
+                            </div>
+
+                            <div class="right-side">
+
+                                <div class="social-block">
+                                    <div class="social facebook"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="social twitter"><i class="fab fa-twitter"></i></div>
+                                    <div class="social youtube"><i class="fab fa-youtube"></i></div>
+                                </div>
+
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+
+                                <div id="goModalLogin" class="register-block">
+                                    <span class="hidden-xs">Логін/</span><span>Вхід</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<div id="backDrop" style="display: none"></div>
+    <section id="modalForLofin" style="display: none;">
 
-<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/main.js"></script>
+    </section>
+
+    <div id="backDrop" style="display: none"></div>
+
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 
 </body>
+
 </html>

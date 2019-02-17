@@ -1,16 +1,10 @@
-/*----------------- apple-website font ---------------*/
-/*@font-face {*/
-    /*font-family: "San Francisco";*/
-    /*font-weight: 400;*/
-    /*src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");*/
-/*}*/
-
-@import url('https://fonts.googleapis.com/css?family=Asap');
-/*----------------- end apple-website font ---------------*/
+/*-----------------  font ---------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,500,500i,900,900i');
+/*----------------- end font ---------------*/
 
 body {
-    background-color: #fff;
-    font-family: 'Asap', sans-serif;
+    background-color: #f3f6f8;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
 /*-------------------- BackDrop -------------------*/
@@ -24,10 +18,19 @@ body {
 }
 /*-------------------- end BackDrop -------------------*/
 /*-------------------- HEADER -------------------*/
-header{
+header {
     padding: 10px 0;
-    background-color: red;
-    color: #fff;
+    background-color: #fff;
+    color: #8e8e8e;
+}
+header .wrapper .left-side,
+header .wrapper .center-side,
+header .wrapper .right-side {
+    display: flex;
+}
+header .wrapper .right-side > div {
+    display: flex;
+    padding-left: 15px;
 }
 header .wrapper {
     display: flex;
@@ -35,102 +38,50 @@ header .wrapper {
     justify-content: space-between;
     align-items: center;
 }
-header .languages a {
-    color: #fff;
+.right-side .social-block .social {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 1px solid #8e8e8e;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 2px;
 }
-.headerLoginForm .login-form-field {
-    display: inline-block;
-    position: relative;
-}
-.headerLoginForm .login-form-field img{
-    position: absolute;
-    left: 5px;
-    top: 5px;
-}
-.headerLoginForm input {
-    background:rgba(0,0,0,0.2);
-    color: #fff;
-    border: 0;
-    padding: 3px 5px 3px 25px;;
-}
-.headerLoginForm input::placeholder {
-    color: #fff;
-}
-.headerLoginForm input:active, .headerLoginForm input:focus {
-    outline: none;
-}
-.headerLoginForm button {
-    background:rgba(0,0,0,0.2);
-    border: 0;
-    color: #fff;
-    padding: 3px 20px;
-}
-.headerLoginForm button:hover {
+/*--- Social icons colors ---*/
+.right-side .social-block .social:hover {
     cursor: pointer;
-    background: rgba(0,0,0,0.3);
 }
-/* --- mobile --- */
-.mobile-login-btn img{
-    margin-right: 10px;
+.right-side .social-block .social.facebook:hover,
+.right-side .social-block .fab.fa-facebook-f:hover {
+    color: #314987;
+    border-color: #314987;
 }
-.header-right-side.visible-xs{
-    position: relative;
+.right-side .social-block .social.twitter:hover,
+.right-side .social-block .fab.fa-twitter:hover {
+    color: #41abe1;
+    border-color: #41abe1;
 }
-.login-form-mobile {
-    position: fixed;
-    z-index: 100;
-    left: 15px;
-    right: 15px;
-    top: 30%;
-    background-color: #fff;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
-    padding: 15px 0;
+.right-side .social-block .social.youtube:hover,
+.right-side .social-block .fab.fa-youtube:hover {
+    color: #ff0000;
+    border-color: #ff0000;
+}
+/*--- end Social icons colors */
+.right-side .dots {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
-.login-form-mobile-wrap {
-    margin: 0 auto;
-    padding: 0 15px;
-    width: 100%;
+.right-side .dots .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #8e8e8e;
 }
-.login-form-mobile .login-form-field {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
-    text-align: center;
+.right-side .register-block:hover {
+    cursor: pointer;
 }
-.login-form-mobile .login-form-field img {
-    left: 10px;
-    top: 12px;
-}
-.login-form-mobile .login-form-field input{
-    width: 100%;
-    padding: 10px 5px 10px 30px;
-}
-.login-form-mobile .submit-block {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-.login-form-mobile .submit-block > div {
-    display: flex;
-    flex: 1 1;
-}
-.login-form-mobile .submit-block div:first-child > button{
-    width: 100%;
-    height: 35px;
-}
-.login-form-mobile .submit-block div:last-child {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.closeModalBtn {
-    position: absolute;
-    right: 0;
-    top: -50px;
-    color: #fff;
-    font-size: 30px;
-}
+/* --- mobile --- */
+
 /* --- end mobile --- */
 /*-------------------- end HEADER -------------------*/
