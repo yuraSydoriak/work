@@ -1,11 +1,17 @@
-$(document).ready(function() {
-    $('.mobile-login-btn').click(function () {
-        $('.login-form-mobile').slideDown('slow');
-        $('#backDrop').show();
+$(document).ready(function () {
+
+    $('#goModalLogin').click(function (e) {
+        $('.popup-wrap').fadeIn(500);
+        $('.popup-box').removeClass('transform-out').addClass('transform-in');
+
+        e.preventDefault();
     });
 
-    $('.closeModalBtn').click(function () {
-        $('.login-form-mobile').slideUp('slow');
-        $('#backDrop').hide();
+    $('.close-btn, .popup-wrap').click(function (e) {
+        $('.popup-wrap').fadeOut(500);
+        $('.popup-box').removeClass('transform-in').addClass('transform-out');
+
+        e.preventDefault();
     });
+
 });
