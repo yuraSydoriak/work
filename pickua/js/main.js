@@ -7,7 +7,7 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-    $('.close-btn, .popup-wrap').click(function (e) {
+    $('.close-btn').click(function (e) {
         $('.popup-wrap').fadeOut(500);
         $('.popup-box').removeClass('transform-in').addClass('transform-out');
 
