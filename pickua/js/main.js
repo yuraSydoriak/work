@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    //------------- modal window---------------------------
     $('#goModalLogin').click(function (e) {
         $('.popup-wrap').fadeIn(500);
         $('.popup-box').removeClass('transform-out').addClass('transform-in');
@@ -13,5 +13,11 @@ $(document).ready(function () {
 
         e.preventDefault();
     });
+    //------------- end modal window---------------------------
 
+    //--------------------- slider ----------------------------
+    $('').slick({
+        rtl: true
+    });
+    //------------------ end slider ----------------------------
 });
