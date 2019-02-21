@@ -7,6 +7,27 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
+
+:root {
+/*-------------------- colors-------------------*/
+    --main-text-color: #8e8e8e;
+
+    --blue-default-color: #4f79ff; 
+    --blue-hover-color: #0239e6;
+
+    --pink-default-color: #fb5178; 
+    --pink-hover-color: #ec2b57;
+
+    --backgroud-white: #fff;
+/*-------------------- end colors -------------------*/
+/*-------------------- shadows -------------------*/
+    --main-grey-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+/*-------------------- end shadows -------------------*/
+/*-------------------- shadows -------------------*/
+    --main-color-border: 1px solid var(--main-text-color);
+/*-------------------- end shadows -------------------*/
+}
+
 /*-------------------- BackDrop -------------------*/
 #backDrop {
     position: fixed;
@@ -19,11 +40,11 @@ body {
 /*-------------------- end BackDrop -------------------*/
 /*-------------------- HEADER -------------------*/
 header {
-    color: #8e8e8e;
+    color: var(--main-text-color);
 }
 .top-container {
     padding: 10px 0;
-    background-color: #fff;
+    background-color: var(--backgroud-white);
 }
 .bottom-container {
     padding: 10px 0;
@@ -53,7 +74,7 @@ header .wrapper {
     width: 23px;
     height: 23px;
     border-radius: 50%;
-    border: 1px solid #8e8e8e;
+    border: var(--main-color-border);
     text-align: center;
     margin-left: 10px;
     padding-top: 2px;
@@ -89,10 +110,11 @@ header .wrapper {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: #8e8e8e;
+    background-color: var(--main-text-color);
 }
 .right-side .register-block:hover {
     cursor: pointer;
+    color: var(--blue-default-color);
 }
 /* ----------------------------------------------- */
 .bottom-container .center-side{
@@ -105,8 +127,8 @@ header .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    background-color: var(--backgroud-white);;
+    box-shadow: var(--main-grey-shadow);
     border-radius: 5px;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -146,7 +168,7 @@ header .wrapper {
 .header-search .search-controls input[type='text']::placeholder {
     font-family: 'Roboto', sans-serif;
     font-size: 14px; 
-    color: #8e8e8e;
+    color: var(--main-text-color);
 }
 .header-search .search-controls input[type='submit'] {
     background-image: url(/img/search-icon-small.png);
@@ -154,6 +176,31 @@ header .wrapper {
     background-repeat: no-repeat;
     font-size: 0;
     width: 0;
+}
+.right-side .activities i{
+    color: var(--blue-default-color);
+    font-size: 22px;
+    margin-left: 10px;
+}
+.right-side .activities i.fa-heart:hover{
+    color: var(--blue-hover-color);
+}
+.right-side .activities i.fa-shopping-cart:hover{
+    color: var(--blue-hover-color);
+}
+.right-side .activities .cart {
+    position: relative;
+}
+.right-side .activities .in-cart {
+    position: absolute;
+    background-color: #fb5178;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+    text-align: center;
+    color: #fff;
 }
 /* ----------------------------------------------- */
 /* --- pop-up --- */
@@ -174,9 +221,9 @@ header .wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    box-shadow: var(--main-grey-shadow);
     border-radius: 6px;
-    background: #fff;
+    background: var(--backgroud-white);;
     text-align: center;
 }
 .popup-box h2 {
@@ -227,7 +274,16 @@ header .wrapper {
 }
 /* --- end pop-up --- */
 
-/* --- mobile --- */
-
+/* --- mobile header --- */
+@media (max-width: 425px){
+    .bottom-container .center-side {
+        width: 70%;
+    }
+    .site-name-top {
+        color: var(--blue-default-color);
+        font-weight: 900;
+        font-style: italic;
+    } 
+}
 /* --- end mobile --- */
 /*-------------------- end HEADER -------------------*/
