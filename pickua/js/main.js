@@ -16,8 +16,15 @@ $(document).ready(function () {
     //------------- end modal window---------------------------
 
     //--------------------- slider ----------------------------
-    $('').slick({
-        rtl: true
+    $('.main-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 5000, //delay befor next slide
+        prevArrow: $('.arrow.left'),
+        nextArrow: $('.arrow.right')
     });
     //------------------ end slider ----------------------------
 });
