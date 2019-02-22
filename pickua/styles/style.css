@@ -265,6 +265,7 @@ header .wrapper {
     left: 0px;
     content: "";
     background-image: linear-gradient(to right, rgba(56,127,245,.5), rgba(65,171,225,.5));
+    z-index: 10;
 }
 .popup-box {
     width: 400px;
@@ -277,6 +278,7 @@ header .wrapper {
     border-radius: 6px;
     background: var(--backgroud-white);;
     text-align: center;
+    z-index: 11;
 }
 .popup-box h2 {
     color: #1a1a1a;
@@ -329,13 +331,17 @@ header .wrapper {
 /* --- mobile header --- */
 @media (max-width: 425px){
     .bottom-container .center-side {
-        width: 70%;
+        width: 100%;
     }
     .site-name-top {
         color: var(--blue-default-color);
         font-weight: 900;
         font-style: italic;
-    } 
+    }
+    .header-logo.visible-xs img{
+        height: 26px;
+    }
+
 }
 /* --- end mobile --- */
 /*-------------------- end HEADER -------------------*/
