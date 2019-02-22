@@ -431,6 +431,19 @@ header .wrapper {
     width: 200%;
     height: 200%;
 }
+@media (max-width: 768px){
+    .arrow.left {
+        left: -2px;
+        z-index: 1;
+    }
+    .arrow.right {
+        right: -2px;
+        z-index: 1;
+    }
+    .main-slider {
+        height: 100%;
+    }
+}
 @media (max-width: 425px){
     .arrow.left {
         left: 35px;
@@ -439,6 +452,9 @@ header .wrapper {
     .arrow.right {
         right: 35px;
         z-index: 1;
+    }
+    .main-slider {
+        height: 100%;
     }
 }
 /* end Slider */
