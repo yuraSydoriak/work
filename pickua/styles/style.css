@@ -351,12 +351,10 @@ header .wrapper {
 }
 /* MENU */
 .main-site-menu {
-    background-color: #fff;
+    background-color: var(--backgroud-white);
     box-shadow: var(--main-grey-shadow);
 }
-.main-site-menu ul {
-    
-}
+
 .main-site-menu ul li{
     display: flex;
     align-items: center;
@@ -432,6 +430,16 @@ header .wrapper {
     transform: translate(-40%, -60%) rotate(45deg);
     width: 200%;
     height: 200%;
+}
+@media (max-width: 425px){
+    .arrow.left {
+        left: 35px;
+        z-index: 1;
+    }
+    .arrow.right {
+        right: 35px;
+        z-index: 1;
+    }
 }
 /* end Slider */
 /*-------------------- end section MENU-SLIDER -------------------*/
