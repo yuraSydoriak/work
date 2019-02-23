@@ -57,4 +57,19 @@ $(document).ready(function () {
         }
     });
     //------------ end sorter product titles --------------------
+
+    //------- toggle active class for plan tabs -----------------
+    $('.plan').on('click', function (e) {
+        e.preventDefault();
+        var $planTab = $(this);
+
+        $planTab.addClass("active")
+            .find('.button-def').addClass('blue')
+            .find('.plan-link').removeClass('disabled');
+
+        $planTab.siblings().removeClass('active')
+            .find('.button-def').removeClass('blue')
+            .find('.plan-link').addClass('disabled');
+    });
+    //-------- end toggle active class for plan tabs ------------
 });
