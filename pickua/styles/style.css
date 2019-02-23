@@ -346,6 +346,12 @@ header .wrapper {
 /* --- end mobile --- */
 /*-------------------- end HEADER -------------------*/
 
+.section-title {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    box-shadow: var(--grey-shadow-bottom);
+}
+
 /*-------------------- section MENU-SLIDER -------------------*/
 #menu-slider {
     margin-top: 15px;
@@ -543,14 +549,20 @@ section#we-provide-that {
     display: flex;
     height: 200px;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .product-wrap .product-image-wr a {
     display: flex;
+    justify-content: center;
 }
 .product-wrap .product-image-wr img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+.product-title {
+    height: 30px;
+    margin-bottom: 7px;
 }
 .product-wrap .product-title, 
 .product-wrap .raiting, 
@@ -622,4 +634,15 @@ section#we-provide-that {
 .product-wrap .product-details .goprodlink{
     color: var(--blue-default-color);
 }
-/*----------------- end section WE PROVIDE THAT ------------------*/
+@media (max-width: 425px){
+    .product-wrap .product-image-wr {
+        height: 100px;
+    }
+    .rating label {
+        height: 20px;
+    }   
+    .rating label:before {
+        font-size: 20px;
+    }
+}
+/*----------------- end section BEST PROPOSITION ------------------*/

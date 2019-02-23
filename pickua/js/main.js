@@ -1,5 +1,15 @@
 $(document).ready(function () {
-    //------------- modal window---------------------------
+    //Global vars:
+    var screenWidth = $(window).width();
+
+    // ------------- for scroll document ----------------------
+    $(document).scroll(function () {
+        //var positionScroll = $(this).scrollTop();
+        //console.log(positionScroll);
+    });
+    // ------------- end for scroll document ------------------
+
+    //------------- modal window-------------------------------
     $('#goModalLogin').click(function (e) {
         $('.popup-wrap').fadeIn(500);
         $('.popup-box').removeClass('transform-out').addClass('transform-in');
@@ -27,4 +37,24 @@ $(document).ready(function () {
         nextArrow: $('.arrow.right')
     });
     //------------------ end slider ----------------------------
+
+    //-------------- sorter product titles ---------------------
+
+    $('.product-title.needs-shorter span').each(function () {
+        var fullProdTitle = $(this).text();
+        var shortTitle;
+
+        if (fullProdTitle.length > 25) {
+
+            if (screenWidth > 425) {
+                shortTitle = fullProdTitle.substring(0, 35) + '...';
+                $(this).text(shortTitle);
+            } else {
+                shortTitle = fullProdTitle.substring(0, 25) + '...';
+                $(this).text(shortTitle);
+            }
+
+        }
+    });
+    //------------ end sorter product titles --------------------
 });
