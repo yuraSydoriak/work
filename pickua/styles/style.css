@@ -627,7 +627,7 @@ section#we-provide-that {
 
 .rating label:before {
     content: "\2605";
-    font-size: 30px;
+    font-size: 16px;
     color: #ccc;
     line-height: 1;
 }
