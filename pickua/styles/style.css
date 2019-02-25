@@ -407,6 +407,7 @@ header .wrapper {
 }
 .main-site-menu ul li i {
     /* color: var(--pink-default-color); */
+    /* color: var(--orange-default-color); */
     color: var(--blue-default-color);
     margin-right: 5px;
     width: 30px;
@@ -787,6 +788,7 @@ section#we-provide-that {
     padding: 25px 15px 25px 15px;;
     margin-top: 0px;
     margin-bottom: 0px;
+    transition: all .22s;
 }
 .plan .plan-title {
     color: var(--acent-text-color);
